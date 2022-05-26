@@ -3,25 +3,37 @@
     <link href="snapshot.css" rel="stylesheet">
 </head>
 <body>
-    <!-- <iframe id="inlineFrameExample" title="Inline Frame Example" class="snapshot-style">
-        <html>
-            <head>
-                <script src="./snapshot.js"></script>
-                <style src="./snapshot.css"></style>
-            </head>
-            <body>
-                <button class="container" style="background: rgb(2, 59, 227) none repeat scroll 0% 0%; border-color: rgba(255, 255, 255, 0.5); border-style: solid solid none; border-width: 1px; color: rgb(255, 255, 255); border-radius: 5px 5px 0px 0px;"><div class="contentWrapper"><div class="icon" alt="Usersnap" role="image"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 38">
-                    <path d="M28.917 15.085a10.819 10.819 0 01.67 2.238c1.06 5.81-2.79 11.381-8.6 12.442-5.105.941-10.23-2.007-11.981-6.895-.225-.63-.392-1.28-.499-1.94a.98.98 0 011.572-.918 10.693 10.693 0 0016.642-4.831c.363-1.015 1.778-1.09 2.196-.096zM19 38C8.507 38 0 29.493 0 19S8.507 0 19 0s19 8.507 19 19-8.507 19-19 19zm0-3.984c8.293 0 15.016-6.723 15.016-15.016S27.293 3.984 19 3.984 3.984 10.707 3.984 19 10.707 34.016 19 34.016z"></path>
-                </svg>
-                </div><span class="label">Feedback</span></div><div class="loadingWave"></div></button>    
-            </body>    
-        </html>
-    </iframe> -->
-
-    <div class="snapshot-style" id="snapshot">
-        <button class="container" style="background: rgb(2, 59, 227) none repeat scroll 0% 0%; border-color: rgba(255, 255, 255, 0.5); border-style: solid solid none; border-width: 1px; color: rgb(255, 255, 255); border-radius: 5px 5px 0px 0px; width:100%; height: 100%;">
+    <div class="snapshot-tab">
+        <button class="snapshot-feedback-button">
             <span class="label">Feedback</span>
         </button>
+    </div>
+    
+    <div class="snapshot-full-overlay">
+        <div class="snapshot-bottom-right-container">
+            <form class="snapshot-widget">
+                <div class="snapshot-widget-element">
+                    <h1 class="snapshot-widget-head">Snapshot</h1>
+                </div>
+                <div class="snapshot-widget-element">
+                    <div class="snapshot-widget-button-area">
+                        <button class="snapshot-widget-button">text</button>
+                        <button class="snapshot-widget-button">pen</button>
+                        <button class="snapshot-widget-button">arrow</button>
+                    </div>
+                </div>
+                <div class="snapshot-widget-element">
+                    <div class="snapshot-widget-body">
+                        <label>Title</label><input>
+                        <label>Your e-mail</label><input>
+                        <label>Your message</label><input>
+                    </div>
+                </div>
+                <div class="snapshot-widget-element">
+                    <button class="snapshot-widget-submit">SEND</button>
+                </div>
+            </div>
+        </div>
     </div>
 
     <h1>test page</h1>

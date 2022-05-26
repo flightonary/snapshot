@@ -1,14 +1,58 @@
-.snapshot-style {
+.snapshot-tab {
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
-    width: 125px !important;
-    height: 35px !important;
-    border: medium none !important;
-    display: block !important;
-    position: fixed !important;
-    transition: transform 0.5s ease 0s !important;
-    bottom: 0px !important;
-    right: 2em !important;
-    transform: translateY(0px) !important;
-  }
+    width: 125px;
+    height: 35px;
+    border: medium none;
+    display: block;
+    position: fixed;
+    transition: transform 0.5s ease 0s;
+    bottom: 0px;
+    right: 2em;
+    transform: translateY(0px);
+}
+
+.snapshot-feedback-button {
+    background: rgb(2, 59, 227) none repeat scroll 0% 0%;
+    border-color: rgba(255, 255, 255, 0.5);
+    border-style: solid solid none;
+    border-width: 1px;
+    color: rgb(255, 255, 255);
+    border-radius: 5px 5px 0px 0px;
+    width:100%;
+    height: 100%;
+}
+
+.snapshot-full-overlay {
+    position: fixed;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background: rgba(100, 100, 100, .8);
+    z-index: 2147483647;
+}
+
+.snapshot-bottom-right-container {
+    right: 0;
+    bottom: 0;
+    height: 25rem; width: 21rem;
+    opacity: 1;
+    z-index: 1100;
+    position: absolute;
+    transform: translateY(0);
+}
+
+.snapshot-widget {
+    background: rgb(255, 255, 255);
+    color: #212b37;
+    margin: 0;
+    opacity: 1;
+    overflow: auto;
+    position: relative;
+    font-size: 14px;
+    max-width: 100%;
+    max-height: 100%;
+    transition: height 0.5s, width 0.5s, max-height 0.5s, border-color 0.5s, opacity 0.5s, border-radius 0.5s;
+    border-radius: 1.5rem 0 0 0;
+    pointer-events: all;
+}
